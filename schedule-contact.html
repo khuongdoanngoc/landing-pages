@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Contact - Emerald Hour</title>
+    <link rel="stylesheet" href="base-style.css">
+    <link rel="stylesheet" href="schedule-contact.style.css">
+</head>
+<body>
+    <!-- Back Navigation -->
+    <nav class="back-nav">
+        <a href="#" class="back-link">
+            <span class="back-arrow">← BACK</span>
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Contact Form Section -->
+        <section class="contact-section">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="fullname" class="form-label">Full name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your name..." class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" placeholder="...@gmail.com" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone number</label>
+                    <div class="phone-input-wrapper">
+                        <div class="country-code">
+                            <img src="images/schedule-contact/vietnam-flag.svg" alt="Vietnam Flag" class="flag-icon">
+                            <span>+84</span>
+                        </div>
+                        <input type="tel" id="phone" name="phone" class="form-input phone-input">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="appointment-date" class="form-label">Choose Appointment Date</label>
+                        <input type="text" id="appointment-date" name="appointment-date" placeholder="DD/X/YYY" class="form-input">
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="appointment-time" class="form-label">Choose Appointment Time</label>
+                        <input type="text" id="appointment-time" name="appointment-time" placeholder="00:00" class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="other-question" class="form-label">Other question</label>
+                    <textarea id="other-question" name="other-question" placeholder="Message" class="form-textarea"></textarea>
+                </div>
+
+                <div class="form-checkboxes">
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox-input">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">I agree that Emerald Hour sends me its newsletter via email, and consent that Emerald Hour processes my personal data for this purpose. I confirm to have read and understood the Privacy Notice. I can always unsubscribe by clicking the opt-out link in the email.</span>
+                        </label>
+                    </div>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" class="checkbox-input">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">I have read the Privacy notice*</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">SEND</button>
+            </form>
+        </section>
+
+        <!-- Images Section -->
+        <section class="images-section">
+            <div class="watch-image-card">
+                <img src="images/schedule-contact/pelagos-ultra.png" alt="Pelagos Ultra Watch" class="watch-image">
+                <div class="watch-info">
+                    <h3 class="watch-title">PELAGOS ULTRA</h3>
+                    <p class="watch-subtitle">A new frontier beneath the surface</p>
+                </div>
+            </div>
+            <div class="watch-image-card">
+                <img src="images/schedule-contact/other.png" alt="Other Watch" class="watch-image">
+                <div class="watch-info">
+                    <h3 class="watch-title">Other</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>EMERALD HOUR</h3>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>WATCHES</h4>
+                    <ul>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="#">Maintenance Services</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>OUR WORLD</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>CONTACT US</h4>
+                </div>
+                <div class="footer-column">
+                    <h4>BOUTIQUES LOCATION</h4>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <div class="social-icons">
+                        <img src="images/about-us/footer-icons/facebook-brands.svg" alt="Facebook">
+                        <img src="images/about-us/footer-icons/instagram-brands.svg" alt="Instagram">
+                        <img src="images/about-us/footer-icons/x-twitter-brands.svg" alt="Twitter">
+                        <img src="images/about-us/footer-icons/tiktok-brands.svg" alt="TikTok">
+                    </div>
+                </div>
+                <div class="footer-payment">
+                    <div class="payment-icons">
+                        <img src="images/about-us/footer-icons/cc-visa-brands.svg" alt="Visa">
+                        <img src="images/about-us/footer-icons/cc-mastercard-brands.svg" alt="Mastercard">
+                        <img src="images/about-us/footer-icons/apple-pay-brands.svg" alt="Apple Pay">
+                        <img src="images/about-us/footer-icons/google-pay-brands.svg" alt="Google Pay">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright 2025 ©emeraldhour.com.vn</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Color Variables */
+:root {
+  /* Main Colors */
+  --main-dark-green: #203B37;    /* RGB: 32, 59, 55 */
+  --main-light-green: #96CDB0;   /* RGB: 150, 205, 176 */
+  
+  /* Secondary Colors */
+  --secondary-black: #081B1B;    /* RGB: 8, 27, 27 */
+  --secondary-green: #5A8F76;    /* RGB: 90, 143, 118 */
+  --secondary-brown: #C18D52;    /* RGB: 193, 141, 82 */
+  --secondary-cream: #EEE8B2;    /* RGB: 238, 232, 178 */
+
+  /* Typography Variables */
+  /* Font Families */
+  --font-nunito: 'Nunito Sans', sans-serif;
+  --font-garamond: 'EB Garamond', serif;
+
+  /* Mobile Font Sizes */
+  --font-size-sub-body-mobile: 12px;
+  --font-size-body-mobile: 14px;
+  --font-size-heading-mobile: 23px;
+
+  /* Tablet Font Sizes */
+  --font-size-sub-heading-tablet: 18px;
+  --font-size-body-tablet: 16px;
+  --font-size-heading-medium-tablet: 28px;
+  --font-size-heading-mega-tablet: 69px;
+
+  /* Desktop Font Sizes */
+  --font-size-body-desktop: 20px;
+  --font-size-heading-large-desktop: 35px;
+  --font-size-heading-mega-desktop: 69px;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+}
+
+/* Typography Utility Classes */
+
+/* Body Text Styles */
+.body-text {
+  font-family: var(--font-nunito);
+  font-weight: 400;
+  line-height: var(--line-height-normal);
+  font-size: var(--font-size-body-mobile);
+}
+
+.body-text--bold {
+  font-weight: 700;
+}
+
+.body-text--italic {
+  font-style: italic;
+}
+
+.sub-body-text {
+  font-family: var(--font-nunito);
+  font-weight: 300;
+  font-size: var(--font-size-sub-body-mobile);
+  line-height: var(--line-height-normal);
+}
+
+.sub-body-text--italic {
+  font-style: italic;
+}
+
+/* Heading Styles */
+.heading {
+  font-family: var(--font-garamond);
+  font-weight: 400;
+  line-height: var(--line-height-tight);
+  font-size: var(--font-size-heading-mobile);
+}
+
+.heading--bold {
+  font-weight: 700;
+}
+
+.heading--italic {
+  font-style: italic;
+}
+
+.heading-medium {
+  font-family: var(--font-garamond);
+  font-weight: 400;
+  line-height: var(--line-height-tight);
+  font-size: var(--font-size-heading-medium-tablet);
+}
+
+.heading-medium--bold {
+  font-weight: 700;
+}
+
+.heading-medium--italic {
+  font-style: italic;
+}
+
+.heading-large {
+  font-family: var(--font-garamond);
+  font-weight: 400;
+  line-height: var(--line-height-tight);
+  font-size: var(--font-size-heading-large-desktop);
+}
+
+.heading-large--bold {
+  font-weight: 700;
+}
+
+.heading-large--italic {
+  font-style: italic;
+}
+
+.heading-mega {
+  font-family: var(--font-garamond);
+  font-weight: 400;
+  line-height: var(--line-height-tight);
+  font-size: var(--font-size-heading-mega-desktop);
+}
+
+.heading-mega--bold {
+  font-weight: 700;
+}
+
+.heading-mega--italic {
+  font-style: italic;
+}
+
+.sub-heading {
+  font-family: var(--font-nunito);
+  font-weight: 400;
+  line-height: var(--line-height-normal);
+  font-size: var(--font-size-sub-heading-tablet);
+}
+
+.sub-heading--italic {
+  font-style: italic;
+}
+
+/* Responsive Typography */
+@media (min-width: 768px) {
+  .body-text {
+    font-size: var(--font-size-body-tablet);
+  }
+  
+  .sub-heading {
+    font-size: var(--font-size-sub-heading-tablet);
+  }
+  
+  .heading-medium {
+    font-size: var(--font-size-heading-medium-tablet);
+  }
+  
+  .heading-mega {
+    font-size: var(--font-size-heading-mega-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .body-text {
+    font-size: var(--font-size-body-desktop);
+  }
+  
+  .heading-large {
+    font-size: var(--font-size-heading-large-desktop);
+  }
+  
+  .heading-mega {
+    font-size: var(--font-size-heading-mega-desktop);
+  }
+}
+
+/* Base Typography Setup */
+body {
+  font-family: var(--font-nunito);
+  font-size: var(--font-size-body-mobile);
+  line-height: var(--line-height-normal);
+  color: var(--secondary-black);
+}
+
+h1 {
+  font-family: var(--font-garamond);
+  font-size: var(--font-size-heading-mega-desktop);
+  font-weight: 700;
+  line-height: var(--line-height-tight);
+}
+
+h2 {
+  font-family: var(--font-garamond);
+  font-size: var(--font-size-heading-large-desktop);
+  font-weight: 700;
+  line-height: var(--line-height-tight);
+}
+
+h3 {
+  font-family: var(--font-garamond);
+  font-size: var(--font-size-heading-medium-tablet);
+  font-weight: 700;
+  line-height: var(--line-height-tight);
+}
+
+h4 {
+  font-family: var(--font-garamond);
+  font-size: var(--font-size-heading-mobile);
+  font-weight: 700;
+  line-height: var(--line-height-tight);
+}
+
+h5, h6 {
+  font-family: var(--font-nunito);
+  font-size: var(--font-size-sub-heading-tablet);
+  font-weight: 600;
+  line-height: var(--line-height-normal);
+}
+
+p {
+  font-family: var(--font-nunito);
+  font-size: var(--font-size-body-mobile);
+  line-height: var(--line-height-normal);
+  margin-bottom: 1em;
+}
+
